@@ -1,0 +1,57 @@
+body.login { background-color: #ddd; background-image: url('login-bg.jpg'); background-repeat: no-repeat; background-attachment: fixed; 
+  background-position: center; background-size: cover; }
+
+.login h1 a { background-image: url(sampnews24-logo.png); width: auto; background-size: auto; height: 90px; }
+
+.login .button-primary {
+  width: 150px;
+  float:right;
+  background-color:#303ac2 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#303ac2), to(#303ac2));
+  background: -webkit-linear-gradient(top, #303ac2, #303ac2);
+  background: -moz-linear-gradient(top, #303ac2, #303ac2);
+  background: -ms-linear-gradient(top, #303ac2, #303ac2);
+  background: -o-linear-gradient(top, #303ac2, #303ac2);
+  background-image: -ms-linear-gradient(top, #303ac2 0%, #303ac2 100%);
+  color: #ffffff;
+  -webkit-border-radius: 4px;
+  border: 1px solid #141FAC;
+}
+
+.login .button-primary:hover {
+  background-color:#303ac2 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#303ac2), to(#141FAC ));
+  background: -webkit-linear-gradient(top, #303ac2, #141FAC );
+  background: -moz-linear-gradient(top, #303ac2, #141FAC );
+  background: -ms-linear-gradient(top, #303ac2, #141FAC );
+  background: -o-linear-gradient(top, #303ac2, #141FAC );
+  background-image: -ms-linear-gradient(top, #0b436e 0%, #141FAC 100%);
+  color: #fff;
+  -webkit-border-radius: 4px;
+  border: 1px solid #141FAC;
+}
+
+.login .button-primary:active {
+  background-color:#303ac2 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#141FAC), to(#303ac2));
+  background: -webkit-linear-gradient(top, #141FAC, #303ac2);
+  background: -moz-linear-gradient(top, #141FAC, #303ac2);
+  background: -ms-linear-gradient(top, #141FAC, #303ac2);
+  background: -o-linear-gradient(top, #141FAC, #303ac2);
+  background-image: -ms-linear-gradient(top, #141FAC 0%, #303ac2 100%);
+  color: #fff;
+  -webkit-border-radius: 4px;
+  border: 1px solid #141FAC;
+}
+
+.wp-core-ui .button-primary { text-shadow: none; box-shadow: 0 1px 0 #141FAC; }
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary:focus { box-shadow: 0 1px 0 #00660c,0 0 2px 1px #141FAC; }
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {
+	border-color: #0F1884;
+}
+
+.login #login_error, .login .message { border-left: 4px solid #303ac2; }
+
+input[type=checkbox]:checked:before { color: #303ac2; }

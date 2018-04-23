@@ -1,0 +1,2317 @@
+/*
+Theme Name:     Newspaper 7 Child theme
+Theme URI:    http://themeforest.net/user/tagDiv/portfolio
+Description:    Child theme made by tagDiv
+Author:         tagDiv
+Author URI:   http://themeforest.net/user/tagDiv/portfolio
+Template:       Newspaper                             
+Version:        7.0c
+*/
+
+
+/*  ----------------------------------------------------------------------------
+    This file will load automatically when the child theme is active. You can use it
+    for custom CSS.
+*/
+
+
+/*
++----------------------------------------------------------------+
+|                                             |
+| WordPress Plugin: WP-Polls                    |
+| Copyright (c) 2012 Lester "GaMerZ" Chan                 |
+|                                             |
+| File Written By:                                  |
+| - Lester "GaMerZ" Chan                              |
+| - http://lesterchan.net                             |
+|                                             |
+| File Information:                                 |
+| - Polls CSS File                                  |
+| - wp-content/plugins/wp-polls/polls-css.css               |
+|                                             |
++----------------------------------------------------------------+
+*/
+
+
+.wp-polls-archive {
+  /* background-color: #ffffff; */
+}
+.wp-polls, .wp-polls-form {
+  /* background-color: #ffffff; */
+}
+.wp-polls ul li, .wp-polls-ul li, .wp-polls-ans ul li {
+  text-align: left;
+  background-image: none;
+  display: block;
+}
+.wp-polls ul, .wp-polls-ul, .wp-polls-ans ul  {
+  text-align: left;
+  list-style: none;
+  float: none;
+}
+.wp-polls ul li:before, .wp-polls-ans ul li:before, #sidebar ul ul li:before {
+  content: '';
+}
+.wp-polls IMG, .wp-polls LABEL , .wp-polls INPUT, .wp-polls-loading IMG, .wp-polls-image IMG {
+  display: inline;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+.wp-polls-ul {
+  padding: 0px;
+  margin: 0px 0px 10px 10px;
+}
+.wp-polls-ans {
+  width:100%;
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+  /* background-color: #ffffff; */
+}
+.wp-polls-loading {
+  display: none;
+  text-align: center;
+  height: 16px;
+  line-height: 16px;
+}
+.wp-polls-image {
+  border: 0px;
+}
+.wp-polls .Buttons {
+  border:1px solid #c8c8c8;
+  background-color: #f3f6f8;
+}
+/* Polls Archive Paging */
+.wp-polls-paging a, .wp-polls-paging a:link {
+  padding: 2px 4px 2px 4px; 
+  margin: 2px;
+  text-decoration: none;
+  border: 1px solid #0066cc;
+  color: #0066cc;
+  background-color: #FFFFFF;  
+}
+.wp-polls-paging a:visited {
+  padding: 2px 4px 2px 4px; 
+  margin: 2px;
+  text-decoration: none;
+  border: 1px solid #0066cc;
+  color: #0066cc;
+  background-color: #FFFFFF;  
+}
+.wp-polls-paging a:hover {  
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.wp-polls-paging a:active {
+  padding: 2px 4px 2px 4px; 
+  margin: 2px;
+  text-decoration: none;
+  border: 1px solid #0066cc;
+  color: #0066cc;
+  background-color: #FFFFFF;  
+}
+.wp-polls-paging span.pages {
+  padding: 2px 4px 2px 4px; 
+  margin: 2px 2px 2px 2px;
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+}
+.wp-polls-paging span.current {
+  padding: 2px 4px 2px 4px; 
+  margin: 2px;
+  font-weight: bold;
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.wp-polls-paging span.extend {
+  padding: 2px 4px 2px 4px; 
+  margin: 2px;  
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+/* Sportspress files */
+
+/* SportsPress icons */
+@font-face {
+  font-family: 'sportspress';
+  src:url('https://www.sampnews24.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/fonts/sportspress.eot?-76nsup');
+  src:url('https://www.sampnews24.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/fonts/sportspress.eot?#iefix-76nsup') format('embedded-opentype'),
+    url('https://www.sampnews24.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/fonts/sportspress.woff2?-76nsup') format('woff2'),
+    url('https://www.sampnews24.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/fonts/sportspress.ttf?-76nsup') format('truetype'),
+    url('https://www.sampnews24.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/fonts/sportspress.woff?-76nsup') format('woff'),
+    url('https://www.sampnews24.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/fonts/sportspress.svg?-76nsup#sportspress') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="sp-icon-"], [class*=" sp-icon-"] {
+  font-family: sportspress, dashicons;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  vertical-align: top;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sp-icon-baseball:before {
+  content: "\e701";
+}
+.sp-icon-basketball:before {
+  content: "\e602";
+}
+.sp-icon-cricketball:before {
+  content: "\e604";
+}
+.sp-icon-soccerball:before {
+  content: "\e700";
+}
+.sp-icon-shoe:before {
+  content: "\e800";
+}
+.sp-icon-card:before {
+  content: "\e801";
+}
+.sp-icon-sub:before {
+  content: "\f503";
+}
+
+
+
+
+
+/* SportsPress */
+
+.sp-align-left {
+  text-align: left;
+}
+
+.sp-align-right {
+  text-align: right;
+}
+
+.sp-align-center {
+  text-align: center;
+}
+
+/* Header */
+.sp-header {
+  position: relative;
+  overflow: visible;
+  z-index: 10000;
+}
+
+/* Templates */
+.sp-template {
+  margin-bottom: 1.5em;
+}
+.sp-template-profile-selector {
+  clear: both;
+  overflow: hidden;
+}
+.sp-template-logo,
+.sp-template-photo {
+  float: left;
+  margin-bottom: 2em;
+  margin-right: 2em;
+  max-width: 50%;
+}
+.sp-template-event-logos {
+  text-align: center;
+}
+.sp-template-details {
+  display: inline;
+}
+.sp-template-details dl {
+  overflow: hidden;
+}
+
+/* Tabs */
+.sp-tab-menu {
+  display: block;
+  clear: both;
+  padding: 0 5px;
+  margin: 0 0 1.5em;
+  list-style: none;
+}
+.sp-tab-menu-item {
+  display: inline-block;
+  margin: 0;
+}
+.sp-tab-menu-item a {
+  display: block;
+  margin: 0 10px;
+  color: inherit;
+  opacity: 0.5;
+    transition: all .3s;
+}
+.sp-tab-menu-item a:focus {
+    outline: none;
+}
+.sp-tab-menu-item-active a,
+.sp-tab-menu-item a:hover {
+  color: inherit;
+  opacity: 1;
+}
+.sp-tab-content {
+  display: none;
+}
+
+/* Profile selector */
+.sp-template-profile-selector {
+  text-align: right;
+  margin-bottom: 0.5em;
+}
+
+/* Data Tables */
+.sp-scrollable-table-wrapper {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.sp-data-table {
+  width: 100%;
+  table-layout: auto;
+    border-spacing: 0;
+}
+.sp-paginated-table {
+  margin-bottom: 0;
+}
+.sp-data-table thead th {
+  white-space: nowrap;
+}
+.sp-data-table thead .sorting,
+.sp-data-table thead .sorting_asc,
+.sp-data-table thead .sorting_desc,
+.sp-data-table thead .sorting_asc_disabled,
+.sp-data-table thead .sorting_desc_disabled {
+  cursor: pointer;
+}
+.sp-data-table tbody a {
+  text-decoration: none;
+}
+.sp-data-table .sorting:after,
+.sp-data-table .sorting_asc:after,
+.sp-data-table .sorting_desc:after {
+  font-family: dashicons;
+}
+.sp-data-table .sorting:after {
+  content: "\f156";
+  color: transparent;
+  position: absolute;
+}
+.sp-data-table .sorting_asc:after {
+  content: "\f142";
+  position: absolute;
+}
+.sp-data-table .sorting_desc:after {
+  content: "\f140";
+  position: absolute;
+}
+.sp-data-table .data-name {
+  text-align: left;
+}
+.sp-data-table .data-number,
+.sp-data-table .data-rank {
+  width: 1px;
+}
+
+/* Post Content */
+.sp-post-content {
+  clear: both;
+}
+
+/* Pagination */
+.sp-table-wrapper .dataTables_paginate {
+  text-align: center;
+}
+.sp-table-wrapper .dataTables_paginate .paginate_button {
+  margin: 0.5em;
+  cursor: pointer;
+  display: inline-block;
+}
+.sp-table-wrapper .dataTables_paginate .previous {
+  float: left;
+  margin-left: 0;
+}
+.sp-table-wrapper .dataTables_paginate .next {
+  float: right;
+  margin-right: 0;
+}
+.sp-table-wrapper .dataTables_paginate .current {
+  opacity: 0.5;
+  color: inherit;
+  cursor: default;
+}
+.sp-table-wrapper .dataTables_paginate .disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+/* Post Excerpt */
+.sp-excerpt {
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* League Table */
+.sp-league-table td.has-logo {
+  line-height: 2em;
+}
+.sp-league-table .data-name .team-logo {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.sp-league-table .data-name .team-logo img {
+  width: auto;
+  height: auto;
+  max-width: 2em;
+  max-height: 2em;
+}
+
+/* Player List */
+.sp-player-list td {
+  line-height: 2em;
+}
+.sp-player-list .data-name .player-photo,
+.sp-player-list .data-name .player-flag {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.sp-player-list .data-name .player-photo img,
+.sp-player-list .data-name .player-flag img {
+  width: auto;
+  height: auto;
+  max-width: 2em;
+  max-height: 2em;
+}
+
+/* Button */
+.sp-button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Event Logos */
+.sp-event-logos a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sp-event-logos img {
+  display: inline !important;
+  vertical-align: middle;
+}
+
+/* Events */
+.sp-event-overview,
+.sp-event-performance-tables {
+  overflow: hidden;
+  clear: both;
+}
+
+/* Event Logos */
+.sp-event-logos .sp-team-logo {
+  white-space: nowrap;
+  display: block;
+}
+
+.sp-event-logos .sp-team-logo .sp-team-result {
+  display: block;
+  margin: 0.5em 0;
+}
+
+/* Event Venue */
+.sp-event-venue thead th {
+  white-space: normal;
+}
+
+/* Event Performance */
+.sp-template-event-performance-icons thead {
+  display: none;
+}
+.sp-event-performance .sub {
+  background: rgba(0,0,0,0.05);
+}
+.sp-event-performance .sub-in,
+.sp-event-performance .sub-out {
+  cursor: default;
+}
+.sp-event-performance .sub-in:before,
+.sp-event-performance .sub-out:before {
+  font-family: dashicons;
+}
+.sp-event-performance .sub-in:before {
+  content: "\f140";
+}
+.sp-event-performance .sub-out:before {
+  content: "\f142";
+}
+.sp-event-performance .sp-performance-icons {
+  width: 25%;
+}
+
+/* Event Performance (Icons) */
+.sp-event-performance-teams .sp-template-event-performance-icons {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  clear: left;
+  padding-right: 10px;
+}
+
+.sp-event-performance-teams .sp-template-event-performance-icons:nth-child(2n) {
+  float: right;
+  clear: right;
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.sp-template-event-performance-icons .sp-player-position {
+    display: block;
+}
+
+/* Event Calendar */
+.sp-event-calendar {
+    border-spacing: 0;
+}
+.sp-event-calendar a {
+  text-decoration: none;
+}
+.sp-event-calendar tbody td, .sp-event-calendar thead th {
+  text-align: center;
+}
+.sp-event-calendar #next {
+  text-align: right;
+}
+.sp-event-calendar #prev {
+  text-align: left;
+}
+
+/* Event List */
+.sp-event-list .data-date date,
+.sp-event-list .data-time date {
+  display: none !important;
+}
+.sp-event-list .data-article {
+  white-space: nowrap;
+}
+.sp-event-list .data-article a .dashicons {
+  padding-right: 3px;
+}
+.sp-event-list .data-time,
+.sp-event-list .data-results {
+  white-space: nowrap;
+}
+.sp-event-list .data-home {
+  text-align: right;
+}
+.sp-event-list .data-away {
+  text-align: left;
+}
+.sp-event-list td.has-logo {
+  line-height: 2em;
+}
+.sp-event-list .team-logo {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.sp-event-list .team-logo img {
+  width: auto;
+  height: auto;
+  max-width: 2em;
+  max-height: 2em;
+}
+.sp-event-list .data-home img,
+.sp-event-list .data-away img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.sp-event-list .data-home img {
+  margin-left: 8px;
+}
+.sp-event-list .data-away img {
+  margin-right: 8px;
+}
+.sp-event-list-format-homeaway .data-time {
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* Event Blocks */
+.sp-event-blocks thead {
+  display: none;
+}
+.sp-event-blocks .sp-event-date,
+.sp-event-blocks .sp-event-time,
+.sp-event-blocks .sp-event-results,
+.sp-event-blocks .sp-event-title {
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+  clear: none;
+}
+.sp-event-blocks .sp-event-league,
+.sp-event-blocks .sp-event-season,
+.sp-event-blocks .sp-event-venue {
+  text-align: center;
+  margin: 0 20%;
+  padding: 0 20px;
+}
+.sp-event-blocks .team-logo {
+  margin: 10px;
+  width: 20%;
+  height: 4em;
+  max-width: 6em;
+  text-align: center;
+}
+.sp-event-blocks .logo-odd {
+  float: left;
+}
+.sp-event-blocks .logo-even {
+  float: right;
+}
+.sp-event-blocks .team-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.sp-fixtures-results {
+  clear: both;
+}
+.widget .sp-event-blocks .sp-event-title {
+  margin: 10px;
+  padding: 0;
+  clear: both;
+}
+
+/* Event Logos Block */
+.sp-template-event-logos-block .team-logo {
+  float: none;
+  max-width: none;
+  width: 100%;
+  height: auto;
+  color: inherit;
+}
+
+.sp-template-event-logos-block .team-logo img {
+  vertical-align: middle;
+}
+
+.sp-template-event-logos-block .sp-team-name {
+  display: block;
+  clear: both;
+  vertical-align: middle;
+  font-size: 28px;
+}
+
+.sp-template-event-logos-block .sp-event-results {
+  font-size: 36px;
+}
+
+/* Event Form */
+.sp-form-events {
+  text-align: center;
+}
+
+.sp-form-events .sp-form-event-link {
+  display: inline-block;
+  text-align: center;
+  vertical-align: text-top;
+  line-height: 1.5em;
+  width: 1.5em;
+  margin: 0 0 0.25em;
+  color: #fff !important;
+  font-weight: normal;
+}
+
+.sp-form-events .sp-form-event-link:hover {
+  color: #fff !important;
+}
+
+/* Countdowns */
+.sp-template-countdown .event-name {
+  clear: both;
+  overflow: hidden;
+}
+.sp-template-countdown .team-logo {
+  width: 20%;
+  height: auto;
+  max-width: 4em;
+}
+.sp-template-countdown .logo-odd {
+  float: left;
+  margin-right: 10px;
+}
+.sp-template-countdown .logo-even {
+  float: right;
+  margin-left: 10px;
+}
+.sp-template-countdown .team-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.sp-template-countdown .sp-countdown {
+  clear: both;
+}
+
+/* Google Maps */
+.sp-google-map {
+  width: 100%;
+  height: 320px;
+}
+.sp-google-map img {
+  max-width: none !important;
+}
+.sp-venue-map {
+  margin-bottom: 4em;
+}
+
+/* View All */
+.sp-view-all-link {
+  display: block;
+  margin-top: 0.5em;
+}
+
+/* Highlight & Heading */
+.sp-highlight,
+.sp-heading {
+  font-weight: bold;
+}
+
+/* Hidden Responsive Element */
+.sp-desktop {
+  display: none;
+}
+
+/* Admin Bar */
+#wpadminbar #wp-admin-bar-sportspress>.ab-item:before {
+  font-family: sportspress, dashicons;
+}
+
+#wpadminbar #wp-admin-bar-sportspress>.ab-item:before {
+  content: "\f111";
+  top: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 801px) {
+  /* Widget Alignment */
+  .sp-widget-align-none {
+    clear: both;
+  }
+  .sp-widget-align-left {
+    width: 50%;
+    float: left;
+    clear: left;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+  .sp-widget-align-right {
+    width: 50%;
+    float: right;
+    clear: right;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Hidden Responsive Element */
+  .sp-desktop {
+    display: block;
+  }
+  .sp-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .sp-event-logos .sp-team-logo {
+    display: inline-block;
+  }
+
+  .sp-event-logos-2 .sp-team-logo {
+    display: inline;
+  }
+
+  .sp-event-logos-2 .sp-team-logo .sp-team-result {
+    display: inline-block;
+    margin: 0 0.25em;
+  }
+  
+  .sp-template-logo + .sp-post-content {
+    clear: left;
+  }
+  
+  .sp-template-photo + .sp-post-content {
+    clear: none;
+  }
+
+  .sp-template-event-logos-block .team-logo {
+    width: 33%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sp-template-event-logos-block .team-logo img {
+    height: 100px;
+  }
+
+  .sp-template-event-logos-block .logo-odd {
+    text-align: left;
+    float: left;
+  }
+
+  .sp-template-event-logos-block .logo-even {
+    text-align: right;
+    float: right;
+  }
+  
+  .sp-template-event-logos-block .logo-odd img {
+    margin-right: 10px;
+  }
+  
+  .sp-template-event-logos-block .logo-even img {
+    margin-left: 10px;
+  }
+  
+  .sp-template-event-logos-block .sp-team-name {
+    display: inline;
+    clear: none;
+  }
+}
+
+
+
+
+
+/* SportsPress Templates */
+
+.sp-template,
+.sp-data-table,
+.sp-table-caption {
+    font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+.sp-template {
+    clear: both;
+    overflow: hidden;
+}
+
+/*
+ * Note: !important everything below to enforce overrides.
+ * This stylesheet can be disabled via SportsPress General Settings.
+ */
+
+.sp-template h1,
+.sp-template h2,
+.sp-template h3,
+.sp-template h4,
+.sp-template h5,
+.sp-template h6,
+.sp-data-table h1,
+.sp-data-table h2,
+.sp-data-table h3,
+.sp-data-table h4,
+.sp-data-table h5,
+.sp-data-table h6,
+.sp-table-caption h1,
+.sp-table-caption h2,
+.sp-table-caption h3,
+.sp-table-caption h4,
+.sp-table-caption h5,
+.sp-table-caption h6 {
+    font-family: "Roboto", "Helvetica", sans-serif !important;
+}
+
+.sp-template {
+    margin-bottom: 20px !important;
+}
+
+.sp-template *,
+.sp-data-table *,
+.sp-table-caption {
+    box-sizing: border-box !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    color: #333 !important;
+}
+
+.sp-table-caption {
+    margin: 0 !important;
+    padding: 15px !important;
+    background: #fff !important;
+    border: 1px solid #e5e5e5 !important;
+    border-bottom: none !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    display: table !important;
+    width: 100% !important;
+}
+
+/* Links */
+
+.sp-template a,
+.sp-data-table a {
+    box-shadow: none !important;
+    border: none !important;
+    text-decoration: none !important;
+    font-weight: inherit !important;
+    color: #00a69c !important;
+}
+
+.sp-template a:hover,
+.sp-data-table a:hover {
+    text-decoration: underline !important;
+}
+
+.sp-template a:hover .dashicons,
+.sp-template a:hover [class^="sp-icon-"], [class*=" sp-icon-"],
+.sp-data-table a:hover .dashicons,
+.sp-data-table a:hover [class^="sp-icon-"], [class*=" sp-icon-"] {
+    text-decoration: none !important;
+}
+
+.sp-view-all-link {
+    padding: 10px 15px !important;
+    margin: 0 !important;
+    background: #fff !important;
+    border: 1px solid #e5e5e5 !important;
+    border-top: none !important;
+    overflow: hidden !important;
+    display: table !important;
+    width: 100% !important;
+    text-align: right !important;
+}
+
+.sp-view-all-link a {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    text-decoration: none !important;
+    color: rgba(51,51,51,0.5) !important;
+}
+
+.sp-view-all-link a:hover {
+    color: #333 !important;
+    text-decoration: none !important;
+}
+
+.sp-form-events a:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+/* Images */
+
+.sp-template img {
+    display: inline-block !important;
+    box-shadow: none !important;
+}
+
+/* Tables */
+
+.sp-data-table {
+    margin: 0 !important;
+    background: #fff !important;
+    border-collapse: collapse !important;
+    border: 1px solid #e5e5e5 !important;
+    width: 100% !important;
+}
+
+.sp-data-table tr {
+    border: none !important;
+}
+
+.sp-data-table th,
+.sp-data-table td {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    border: 1px solid #e5e5e5 !important;
+    padding: 5px 10px !important;
+    text-align: center !important;
+}
+
+.sp-data-table th {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    background: #fff !important;
+    color: #999 !important;
+    border: none !important;
+}
+
+.sp-data-table th a {
+    color: inherit !important;
+}
+
+.sp-data-table .data-name {
+    text-align: left !important;
+}
+
+.sp-data-table .sp-highlight,
+.sp-data-table .highlighted td {
+    font-weight: 500 !important;
+    background: #f9f9f9 !important;
+}
+
+/* Galleries */
+
+.sp-template-gallery .sp-gallery-wrapper {
+    border: 1px solid #e5e5e5 !important;
+    background: #fff !important;
+    display: table !important;
+    width: 100% !important;
+}
+
+.sp-template-gallery .gallery-item {
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+}
+
+.sp-template-gallery .gallery-item a {
+    display: block !important;
+    color: #999 !important;
+}
+
+.sp-template-gallery .gallery-item img {
+    display: block !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+.sp-template-gallery .gallery-caption {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 12px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+    color: #999 !important;
+    line-height: 1.5 !important;
+    padding: 5px 10px !important;
+}
+
+.sp-template-gallery .gallery-caption strong {
+    color: #fff !important;
+    background: #00a69c !important;
+    display: block !important;
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    padding: 5px 10px !important;
+}
+
+.sp-template-staff-gallery .gallery-caption strong {
+    display: none !important;
+}
+
+.sp-template-gallery .sp-gallery-group-name {
+    margin: 0 !important;
+    padding: 15px !important;
+    background: #fff !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    display: block !important;
+}
+
+/* Countdowns */
+
+.sp-template-countdown .sp-event-name,
+.sp-template-countdown .sp-event-venue,
+.sp-template-countdown .sp-event-league {
+    margin: 0 !important;
+    padding: 5px 10px !important;
+    text-align: center !important;
+    line-height: 1.5 !important;
+    display: table !important;
+    width: 100% !important;
+    background: #fff !important;
+    border: 1px solid #e5e5e5 !important;
+    border-bottom: none !important;
+}
+
+.sp-template-countdown .sp-event-name {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    color: #333 !important;
+}
+
+.sp-template-countdown .sp-event-venue,
+.sp-template-countdown .sp-event-league {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    background: #fff !important;
+    color: #999 !important;
+}
+
+.sp-template-countdown .sp-event-venue a,
+.sp-template-countdown .sp-event-league a {
+    color: inherit !important;
+}
+
+.sp-countdown time {
+    display: table !important;
+    background: #fff !important;
+    border: 1px solid #e5e5e5 !important;
+    border-collapse: collapse !important;
+    width: 100% !important;
+}
+
+.sp-countdown span {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    display: table-cell !important;
+    border: 1px solid #e5e5e5 !important;
+    padding: 10px 5px !important;
+    text-align: center !important;
+}
+
+.sp-countdown span small {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    font-weight: 500 !important;
+    color: rgba(51,51,51,0.5) !important;
+    display: block !important;
+}
+
+/* Event Calendars */
+
+.sp-template-event-calendar .sp-table-caption {
+    display: table-caption !important;
+}
+
+.sp-template-event-calendar td {
+    padding: 10px 5px !important;
+}
+
+.sp-template-event-calendar tfoot td {
+    padding: 10px 15px !important;
+    border: none !important;
+}
+
+.sp-template-event-calendar .sp-previous-month {
+    text-align: left !important;
+}
+
+.sp-template-event-calendar .sp-next-month {
+    text-align: right !important;
+}
+
+.sp-template-event-calendar tfoot a {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    text-decoration: none !important;
+    color: rgba(51,51,51,0.5) !important;
+}
+
+.sp-template-event-calendar tfoot a:hover {
+    color: #333 !important;
+    text-decoration: none !important;
+}
+
+/* Event Lists */
+
+.sp-template-event-list .data-home {
+    text-align: right !important;
+}
+
+.sp-template-event-list .data-away {
+    text-align: left !important;
+}
+
+/* Event Blocks */
+
+.sp-template-event-blocks td {
+    padding: 0 !important;
+}
+
+.sp-template-event-blocks .sp-event-date {
+    color: rgba(51,51,51,0.5) !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    margin: 10px !important;
+}
+
+.sp-template-event-blocks .sp-event-date a,
+.sp-template-event-blocks .sp-event-date a:hover {
+    color: inherit !important;
+}
+
+.sp-template-event-blocks .sp-event-results {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #333 !important;
+}
+
+.sp-template-event-blocks .sp-event-results a {
+    color: inherit !important;
+}
+
+.sp-template-event-blocks .sp-event-results a:hover {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.sp-template-event-blocks .sp-event-title,
+.sp-template-event-blocks .sp-event-status {
+    display: block !important;
+    padding: 0 !important;
+    margin: 10px !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
+
+/* Event Logos */
+
+.sp-template-event-logos .sp-team-name,
+.sp-template-event-logos .sp-team-result {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #333 !important;
+}
+
+.sp-template-event-logos a,
+.sp-template-event-logos a:hover {
+    border: none !important;
+    text-decoration: none !important;
+}
+
+/* Event Performance */
+
+.sp-template-event-performance-icons td {
+    border: none !important;
+}
+
+.sp-template-event-performance-icons tr:first-child td {
+    border-top: 1px solid #e5e5e5 !important;
+}
+
+/* Videos */
+.sp-template-event-video iframe {
+    width: 100% !important;
+}
+
+/*  Match Stats */
+
+.sp-template-event-statistics .sp-statistic-label {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: inherit !important;
+    opacity: 0.5 !important;
+}
+
+.sp-event-statistics {
+    background: transparent !important;
+    margin: 0 0 10px !important;
+}
+
+.sp-event-statistics,
+.sp-event-statistics tr,
+.sp-event-statistics td {
+    border: none !important;
+}
+
+.sp-event-statistics .sp-statistic-ratio {
+    padding: 0 !important;
+}
+
+.sp-event-statistics .sp-statistic-bar {
+    border: 1px solid #e5e5e5 !important;
+    background: #f9f9f9 !important;
+}
+
+/* Venues */
+
+.sp-event-venue-map-row td {
+    padding: 0 !important;
+}
+
+.sp-event-venue-map-row .sp-google-map {
+    display: block !important;
+    margin: 0 !important;
+}
+
+/* Teams */
+
+.sp-template-logo {
+    float: right !important;
+    margin: 0 0 20px 20px !important;
+    clear: none !important;
+}
+
+/* Profiles */
+
+.sp-template-details dl {
+    margin: 0 0 20px !important;
+    padding: 15px !important;
+    border: 1px solid #e5e5e5 !important;
+    background: #fff !important;
+}
+
+.sp-template-details dt,
+.sp-template-details dd {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.sp-template-details dt {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: rgba(51,51,51,0.5) !important;
+}
+
+.sp-template-details dd {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #333 !important;
+    margin-bottom: 10px !important;
+}
+
+.sp-template-details dd:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Twitter */
+
+.sp-tweets {
+    border: 1px solid #e5e5e5 !important;
+    border-top: none !important;
+}
+
+/* Scoreboards */
+
+.sp-header-scoreboard .sp-template-scoreboard {
+    margin-bottom: 0 !important;
+}
+
+.sp-template-scoreboard td {
+    padding: 0 !important;
+}
+
+.sp-template-scoreboard td:hover {
+    background: #f9f9f9 !important;
+}
+
+.sp-template-scoreboard a,
+.sp-template-scoreboard a:hover {
+    text-decoration: none !important;
+    color: #333 !important;
+}
+
+.sp-template-scoreboard .sp-scoreboard-date {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: rgba(51,51,51,0.5) !important;
+}
+
+.sp-template-scoreboard .sp-scoreboard-nav {
+    color: #fff !important;
+    background: #00a69c !important;
+}
+
+/* Timelines */
+
+.sp-template-timeline .sp-timeline * {
+    color: initial !important;
+}
+
+/* Tournaments */
+
+.sp-tournament-bracket {
+    color: #333 !important;
+    background: transparent !important;
+    width: 100% !important;
+    border-collapse: separate !important;
+}
+
+.sp-tournament-bracket a,
+.sp-tournament-bracket a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+    border: none! important;
+}
+
+.sp-tournament-bracket tr,
+.sp-tournament-bracket th,
+.sp-tournament-bracket td {
+    border: none !important;
+}
+
+.sp-tournament-bracket thead th {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: rgba(51,51,51,0.5) !important;
+    text-align: center !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.sp-tournament-bracket .sp-team-name {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    background: #fff !important;
+    border: 1px solid #e5e5e5 !important;
+}
+
+.sp-tournament-bracket .sp-heading,
+.sp-tournament-bracket .sp-heading:hover {
+    color: #fff !important;
+    background: #00a69c !important;
+    border-color: #00a69c !important;
+}
+
+.sp-tournament-bracket .sp-event {
+    border-color: #e5e5e5 !important;
+    border-width: 1px !important;
+}
+
+.sp-tournament-bracket .sp-event .sp-event-title {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    color: rgba(51,51,51,0.5) !important;
+    text-align: center !important;
+}
+
+.sp-tournament-bracket .sp-event .sp-event-title:hover {
+    color: #333 !important;
+}
+
+/* Tabs */
+
+.sp-tab-menu {
+    display: block !important;
+    clear: both !important;
+    margin: 0 0 20px !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.sp-tab-menu-item {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.sp-tab-menu-item a {
+    margin: 0 !important;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent !important;
+    box-shadow: none !important;
+}
+
+.sp-tab-menu-item a:hover {
+    text-decoration: none !important;
+}
+
+.sp-tab-menu-item-active a,
+.sp-tab-menu-item-active a:hover {
+    color: #00a69c !important;
+    border-bottom-color: #00a69c !important;
+}
+
+/* Post Content */
+
+.single-sp_team .has-post-thumbnail .sp-post-content {
+    clear: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 601px) {
+    .sp-template-event-calendar tbody td {
+        padding: 15px 5px !important;
+    }
+
+    .widget .sp-template-event-calendar tbody td {
+        padding: 10px 5px !important;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .sp-template-event-calendar tbody td {
+        padding: 20px 5px !important;
+    }
+
+    .widget .sp-template-event-calendar tbody td {
+        padding: 10px 5px !important;
+    }
+
+    .sp-template-event-performance-icons.sp-template-event-performance-section:nth-child(2n) {
+        padding-top: 61px !important;
+    }
+}
+
+
+
+
+
+/* SportsPress Templates LTR */
+
+/*
+ * Note: !important everything to enforce overrides.
+ * This stylesheet can be disabled via SportsPress General Settings.
+ */
+
+.sp-tournament-bracket .sp-team .sp-team-name:before {
+    border-left-color: #e5e5e5 !important;
+    border-right-color: #e5e5e5 !important;
+    left: -10px !important;
+}
+
+.sp-tournament-bracket .sp-team-flip .sp-team-name:before {
+    left: auto !important;
+    right: -10px !important;
+}
+
+.sp-tournament-bracket .sp-team.sp-first-round .sp-team-name {
+    margin-left: -1px !important;
+}
+
+.sp-tournament-bracket .sp-team.sp-last-round .sp-team-name {
+    margin-right: -1px !important;
+}
+
+.sp-template-event-performance-icons .sp-performance-icons {
+    text-align: right !important;
+}
+
+/* Sportspress files */
+
+
+
+
+
+
+/* Main Menu */
+/*.sf-menu > li > a { padding: 0 7px; }*/
+.sf-menu ul li { background: #000; }
+.sf-menu ul .td-menu-item > a { color: #fff; }
+.td-header-style-3 .td-header-sp-logo { margin: 10px 28px; position: inherit; }
+.td-header-style-3 .td-header-sp-recs { margin: 10px 0; height: 90px; }
+.td-full-layout .td-header-style-3 .td-header-main-menu { background: url(./images/menu-bg.png); background-repeat: repeat-x; }
+
+/* Fix skin */
+.contenitore { margin: 0 auto; }
+
+/* Fixed menu fix skin */
+.td-header-style-3 .td-affix { left: 0; }
+/* Fix skin background */
+.td-header-wrap .td-header-menu-wrap-full { background-color: #fff !important; }
+#td-outer-wrap { background: #fff; }
+
+/* Mobile Menu*/
+#td-mobile-nav .td-menu-socials { background: url(https://www.sampnews24.com/wp-content/themes/Newspaper-child/images/menu-bg-180.png);
+  background-repeat: repeat-x; }
+.td-js-loaded .td-menu-background, .td-js-loaded #td-mobile-nav { visibility: hidden; }
+
+/*FIX Menu Mobile */
+#td-mobile-nav { 
+  z-index: 999999999 !important; 
+}
+.td-menu-background { 
+  top: 0px !important; 
+}
+/*FIX Menu Mobile */
+
+/* Header ad */
+.td-header-rec-wrap { max-height: 90px; }
+
+/* Homepage Newsticker padding top */
+.td-main-page-wrap { padding-top: 5px; }
+
+.td_block_trending_now { padding: 0 0 6px 0; }
+.masthead { margin-bottom: 6px; }
+.td_data_time { margin-left: 5px; }
+
+/* Fix Block 11 padding */
+.td_module_10 {
+  padding-bottom: 10px !important;
+}
+
+h2 { font-size: 22px; line-height: 30px; margin-top: 10px; margin-bottom: 15px; }
+h3 > a { color: #000; }
+h3:hover > a { color: #000; }
+.td-post-category { background-color: #000; }
+.td-category a { background-color: #000 !important; }
+.td-module-comments a { background-color: #092261; }
+.td_module_wrap { padding-bottom: 0px; }
+.td_module_16 { padding-bottom: 10px !important; }
+.td_module_6 { padding-bottom: 10px !important; }
+.td-main-content-wrap { padding-bottom: 0px; }
+.td-category-description { width: 100%; }
+.td-crumb-container { padding-top: 5px; min-height: 20px; }
+.td-category-header .td-category-pulldown-filter { top: 35px; }
+
+/* Widgets */
+.widget { margin-bottom: 0px; }
+.widget_text {margin-bottom: 2px; }
+.block-title { border-bottom: none; margin-bottom: 10px; }
+.block-title span { font-size: 20px; line-height: 22px; font-family: 'Oswald'; text-transform: uppercase; color: #ffffff; 
+  background-color: #092261; padding: 5px 0px 5px 15px; border: none; display: block; }
+.widget_text .block-title { margin-bottom: 10px; }
+.content-home { border-right: 1px solid #ececec; }
+.td-main-content { border-right: 1px solid #ececec; }
+#facebook-widget { position:relative; overflow:hidden; clear:both; min-height:240px; text-align: center; }
+
+/* Feedzy Rss Style */
+.feedzy-rss { margin: 10px 0px; }
+.feedzy-rss ul li { line-height: 1.3em; padding: 5px 0 !important; }
+.feedzy-rss .rss_item { border-bottom: none; }
+.feedzy-rss .rss_item .rss_image { margin: 0.1em 1em 0 0 !important; }
+.feedzy-rss ul li:first-child { margin-bottom: 15px; }
+.feedzy-rss ul li:first-child .rss_image { width: 100% !important; height: 180px !important; margin-bottom: 10px !important; }
+.feedzy-rss ul li:first-child .rss_content small { display: none; }
+.feedzy-rss ul li:first-child .title { font-size: 18px; }
+.feedzy-rss .rss_item .rss_content small { color: red; font-weight: 600; font-style: normal; }
+.feedzy-tutte-news a { float: right; margin-right: 10px; color: #0560a0; text-transform: uppercase; font-size: 13px; font-weight: 600; }
+
+
+/* SportsPress Classifiche */
+.widget .sp-data-table td, .widget .sp-data-table th { padding: 6px 2px !important; font-size: 13px !important; }
+.sp-data-table th { background-color: #333 !important; color: #fff !important; border: 1px solid #dedede !important; }
+.widget .sp-league-table td.has-logo { padding: 4px 1px !important; }
+.sp-template-event-blocks .sp-event-title, .sp-template-event-blocks .sp-event-status { font-size: 19px !important; }
+.sp-template a, .sp-data-table a { color: #092261 !important; }
+.sp-data-table .sp-highlight, .sp-data-table .highlighted td { font-weight: 600 !important; }
+
+ul#tabs { list-style-type: none; margin: 0px; padding: 0px; text-align: left; }
+ul#tabs li { display: inline-block; background-color: #092261; border-bottom: solid 5px #2041a0; padding: 5px 20px; margin-bottom: 4px;
+  margin-left: 0px; color: #fff; cursor: pointer; border-radius: 5px; }
+ul#tabs li:hover { background-color: #2041a0; }
+ul#tabs li.active { background-color: #2041a0; }
+ul#tab { list-style-type: none; margin: 0; padding: 0; border-top: solid 5px #2041a0; margin-top: -9px; }
+ul#tab li { display: none; }
+ul#tab li.active { display: block; margin-left: 0; }
+ul#tab li h2 { font-weight: 400; margin-bottom: 30px; padding-bottom: 5px; border-bottom: solid 5px #092261; }
+
+/* SportsPress Event Blocks */
+.sp-template-event-blocks .sp-event-date { color: #2041a0; }
+.sp-template-event-blocks .sp-event-results { color: #2041a0; }
+.sp-template-event-blocks .sp-event-title { color: #2041a0; }
+
+.sp-template-event-logos { font-size: 36px; }
+
+
+/*  Wp Polls plugin  */
+.wp-polls { padding: 0px 5px; }
+.widget_polls-widget { border: 1px solid #ececec; }
+.sondaggio-disabilitato { padding: 0 10px; }
+.td-post-template-2 .td-post-header .entry-title { color: #092261; }
+
+.td-trending-now-wrapper { padding: 0 25px; }
+.td-trending-now-wrapper .td-next-prev-wrap { right: 25px; }
+
+.fotogallery-title { text-transform: uppercase; padding: 0 0 0 15px; }
+.fotogallery-title h4 { text-transform: uppercase; font-size: 32px; font-family: 'Oswald'; color: #092261; font-weight: 600; }
+
+.td-footer-wrapper .block-title a, .td-footer-wrapper .block-title span, .td-footer-wrapper .block-title label { text-shadow: 1px 1px 1px #000; }
+
+.topbar-login { line-height: 28px; }
+.topbar-profile, .topbar-logout, .topbar-login, .topbar-signin { display: inline-block; padding-right: 20px; }
+.topbar-profile a:hover, .topbar-logout a:hover, .topbar-login a:hover, .topbar-signin a:hover { color: #092261 !important; }
+#reply-title { color: #092261; }
+.logged-in-as a { color: #092261; }
+.logged-in-as a:hover { color: #000 !important; }
+
+
+
+/* Radiant Media Player */
+
+.video-playlist-title {
+  margin: 30px 0px 0px 0px;
+}
+
+.video-playlist-title p {
+  background-color: #092261;
+  color: #ffffff;
+  font-family: 'Oswald';
+  font-size: 28px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px !important;
+  margin-bottom: 0px !important;
+  padding: 5px 0px 5px 15px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/*
+.playlist-container .rmp-playlist-container { width: 1068px !important; }
+.playlist-container .rmp-playlist-player-wrapper { width: 760px !important; }
+.rmp-playlist-side-menu { height: 428px !important; }
+.rmp-playlist-header { display: none; }
+
+.rmp-playlist-item-poster-wrapper { text-align: center; } /* center align smaller images */
+/*.rmp-playlist-item-poster { height: auto; width: auto !important; max-height: 80%; } /* fix images with different proportions */
+/*.rmp-playlist-item-title { white-space: pre-line !important; line-height: 1.4em; }
+.rmp-playlist-side-menu .rmp-playlist-item-active, 
+  .rmp-playlist-item:not(.rmp-playlist-item-active):hover { background-color: #000 !important; color: #fff !important; }
+.rmp-playlist-item-description { display: none; }
+
+.rmp-inpp-overlay-menu {
+  width: 530px !important;
+  max-height: 100px !important;
+}
+.rmp-inpp-overlay-menu::-webkit-scrollbar-thumb {
+  background-color: #092261 !important;
+}
+.rmp-i:hover, .rmp-cc-button:hover:not(.rmp-cc-button-active), .rmp-audios-item:hover:not(.rmp-audios-item-active), .rmp-rate:hover:not(.rmp-rate-active), .rmp-quality:hover:not(.rmp-quality-active), .rmp-inpp-li-active, .rmp-inpp-li:hover {
+  color: #092261 !important;
+}
+
+
+#slideplayer-container { 
+  margin: auto;
+  margin-bottom: 5px; 
+}
+
+#slideplayer-container:not(.rmp-fullscreen-on) {
+  -webkit-transition: width 0.4s ease-out, height 0.4s ease-out;
+  -moz-transition: width 0.4s ease-out, height 0.4s ease-out;
+  transition: width 0.4s ease-out, height 0.4s ease-out;
+}
+    
+#slideplayer-container.rmp-detach {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999999;
+}
+
+.slideplayer-chiudi {
+  border: none;
+  padding: 0px;
+  background: none;
+  color: #fff;
+  display: none;
+  position: absolute;
+  top:1px;
+  left: 3px;
+  z-index: 20;
+}
+
+.slideplayer-chiudi .fa {
+  font-size: 16px;
+}
+
+.slideplayer-chiudi .fa:hover {
+  color: #092261;
+  transition: color 0.5s ease-in-out;
+}*/
+
+
+/*Player Essentials*/
+.chiudi_player {
+  padding: 5px 15px;
+  background: #092261;
+  color:#fff;
+  cursor: pointer;
+  display: none;
+  margin: 0px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.playerHolder {
+  width: 100%;
+}
+
+#video-onslide { 
+  margin: 0px 0px 15px 0px; 
+}
+
+.follow-fixed-player {
+  width: 320px!important;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999999;
+}
+
+.follow-holder-player {
+  position: relative;
+  bottom: inherit;
+  right: inherit;
+  z-index: 600;
+}
+
+.sportreview-heading-video {
+  margin: 0px;
+  padding: 15px;
+  background: #303e4b;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.slideout {
+  text-align: center;
+  font-size: 10px;
+}
+/*Player Essentials*/
+
+/* Mediamatic Player */
+#mm-player div:first-of-type {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+/* Mediamatic Player */
+
+.mCSB_inside > .mCSB_container { margin-right: 0px !important; }
+
+/* ADV */
+.masthead-single { margin-top: 5px; clear: both; }
+.td-a-rec-id-custom_ad_1 > div { margin-bottom: 5px; }
+.newtekadv { text-align: center; margin-bottom: 7px; }
+.newtekadv div { margin: 0 auto; }
+.pushbar { margin-top: 5px; }
+.newtekadv-mobile-top { text-align: center; }
+.newtekadv-mobile-bottom { display: none; margin: 0; position: fixed; bottom: 0px; z-index: 2; height: 50px; width: 100%; }
+.newtekadv-mobile-bottom div { margin: 0 auto; }
+
+.adv_inarticle {
+  margin-bottom: 20px;
+}
+
+/* Fix img */
+/*img[width="1"] {
+  position: absolute!important;
+  width: auto!important;
+}
+img[width="0"] {
+  position: absolute!important;
+  width: auto!important;
+}*/
+
+.td-post-featured-image img { margin-bottom: 0px; }
+.photo-copyright { font-size: 11px; font-style: italic; }
+
+/* Next/Prev Articles */
+a.post-prev-thumb { float: left; }
+a.post-next-thumb { float: right; }
+a.post-prev-thumb img { margin: 0px 5px 0px 0px; }
+a.post-next-thumb img { margin: 0px 0px 0px 5px; }
+.td-post-next-prev-content a { margin-bottom: 0px; }
+.td-post-next-prev-content span { font-size: 18px; display: inline-block; }
+.post-prev-next i { font-size: 20px; color: #092261; }
+.post-prev-next .fa-arrow-circle-left { padding-right: 10px; }
+.post-prev-next .fa-arrow-circle-right { padding-left: 10px; }
+.td-post-prev-post a { padding-right: 10px; }
+.td-post-next-post a { padding-left: 10px; }
+
+.td-post-content { text-align: justify; }
+
+.instagram-pics li { margin-left: 0px; text-align: center; }
+
+/*.td_block_slide .td-image-gradient:before {
+    visibility: hidden;  
+}
+.td-js-loaded .td_block_slide .td-image-gradient:before {
+    visibility: visible;
+}*/
+
+#fotogallery-home-row { display: none; }
+.video-home-row { display: none; }
+
+/* Fix Video Still on top*/
+#floorvideo { z-index: 9999999999 !important; }
+
+
+/*======== FIX DETTAGLI ========*/
+.td-crumb-container {
+  padding: 5px 15px;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  margin: 0px -1px;
+}
+
+.category .td-crumb-container {
+  margin: 0px -1px;
+}
+
+.leaderboard-adv {
+  padding: 15px;
+  border: 1px solid #ececec;
+  margin: 0px;
+  width: 100%;
+}
+
+.td_block_trending_now {
+  padding: 15px 0px;
+}
+
+#strossle {
+  margin: 0px 0px 25px 0px;
+}
+
+.td-main-sidebar {
+  border-right: 1px solid #ececec;
+}
+
+.content-home,
+.content-page,
+.sidebar-home {
+  padding-top: 25px;
+}
+
+.single .td-pb-row [class*="td-pb-span"] {
+  padding: 22px;
+}
+
+.category .td-pb-row [class*="td-pb-span"] {
+  padding: 22px;
+}
+
+.sidebar-home,
+.sidebar-page {
+  background: #f7f7f7;
+  border-right: 1px solid #ececec;
+}
+
+.sidebar-page {
+  padding-top: 25px;
+}
+
+.td-main-page-wrap {
+  padding-top: 0px!important;
+}
+
+.td_block_trending_now {
+  padding: 15px 0px;
+}
+
+#category-info-holder .td-pb-row [class*="td-pb-span"] {
+  padding: 0px 25px 25px 25px;
+}
+
+.td_category_template_1 .td-category-header {
+  padding-bottom: 0px;
+  border-bottom: 1px solid #ececec;
+}
+
+#strossle {
+  margin: 0px 0px 25px 0px;
+}
+
+.td-category-header .td-page-title {
+  margin-top: 10px;
+}
+
+.td-main-sidebar,
+.sidebar-page,
+.sidebar-home {
+  width: 30.333333%;
+  padding: 15px!important;
+}
+
+.content-home,
+.content-page,
+.td-main-content {
+ width: 67.5555557%;
+}
+
+
+/*Fix slider home*/
+.iosSlider-col-2 .entry-thumb {
+  width: 100%!important;
+}
+/*Fix slider home*/
+
+
+/*======== FIX DETTAGLI ========*/
+
+
+
+
+
+.td-post-featured-image .wp-caption-text {
+  margin-bottom: 15px;
+}
+
+
+/* Social Share */
+.share-container {
+  line-height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.shareboxes {
+  display: inline-block;
+}
+
+.sharebox {
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 5px;
+  text-align: center;
+  width: 50px; 
+}
+
+.sharebox:hover,
+.sharebox:visited,
+.sharebox:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sharefacebook {
+  background: #3b5998;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.results_share {
+  padding: 0px 0px 0px 5px;
+}
+
+.sharegoogle {
+  background: #dc483c;
+}
+
+.sharetwitter {
+  background: #1da1f2;
+}
+
+.sharewhatsapp {
+  display: none;
+  background: #25d366;
+}
+
+
+@media (max-width: 768px) { .sharefacebook {  } }
+@media (max-width: 768px) { .sharetwitter {  } }
+@media (max-width: 768px) { .sharewhatsapp { display: block; } }
+/* Social Share */
+
+
+
+
+
+/*-----------------
+   Media Queries 
+-----------------*/
+@media screen and (max-width: 320px) {
+  .follow-fixed-player { right: 0px; }
+  .td-js-loaded .td-menu-background, .td-js-loaded #td-mobile-nav { visibility: visible; }
+  .td-header-style-3 .td-header-sp-logo { margin: 25px 20px; }
+  /* fix menu social buttons */
+  .newtekadv-mobile-bottom { display: block; }
+  /* footer fix mobile bottom ad */
+  .td-sub-footer-container { padding-bottom: 50px; }
+  /* footer fix mobile bottom ad */
+  a.post-prev-thumb, a.post-next-thumb { float: none; margin-bottom: 0px; }
+  a.post-prev-thumb img, a.post-next-thumb img { margin: 0px; }
+  .td-main-content { border-right: none; }
+  .td-post-next-prev-content span { display: none; }
+  .single .comments { margin-bottom: 0px; }
+  .video-home-row { padding: 0px !important; }
+  .video-home-row .td-container { padding: 0px !important; }
+  .video-home-row .td-pb-row { padding: 0px !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .share-container {
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 4px;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 389px) {
+  .follow-fixed-player { right: 0px; }
+  .td-js-loaded .td-menu-background, .td-js-loaded #td-mobile-nav { visibility: visible; }
+  .td-header-style-3 .td-header-sp-logo { margin: 25px 20px; }
+  /* fix menu social buttons */
+  .newtekadv-mobile-bottom { display: block; }
+  /* footer fix mobile bottom ad */
+  .td-sub-footer-container { padding-bottom: 50px; }
+  /* footer fix mobile bottom ad */
+  a.post-prev-thumb, a.post-next-thumb { float: none; margin-bottom: 0px; }
+  a.post-prev-thumb img, a.post-next-thumb img { margin: 0px; }
+  .td-main-content { border-right: none; }
+  .td-post-next-prev-content span { display: none; }
+  .single .comments { margin-bottom: 0px; }
+  .video-home-row { padding: 0px !important; }
+  .video-home-row .td-container { padding: 0px !important; }
+  .video-home-row .td-pb-row { padding: 0px !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .share-container {
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 4px;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  .follow-fixed-player { right: 0px; }
+  .td-js-loaded .td-menu-background, .td-js-loaded #td-mobile-nav { visibility: visible; }
+  .td-header-style-3 .td-header-sp-logo { margin: 25px 20px; }
+  /* fix menu social buttons */
+  .newtekadv-mobile-bottom { display: block; }
+  /* footer fix mobile bottom ad */
+  .td-sub-footer-container { padding-bottom: 50px; }
+  /* footer fix mobile bottom ad */
+  a.post-prev-thumb, a.post-next-thumb { float: none; margin-bottom: 0px; }
+  a.post-prev-thumb img, a.post-next-thumb img { margin: 0px; }
+  .td-main-content { border-right: none; }
+  .td-post-next-prev-content span { display: none; }
+  .single .comments { margin-bottom: 0px; }
+  .video-home-row { padding: 0px !important; }
+  .video-home-row .td-container { padding: 0px !important; }
+  .video-home-row .td-pb-row { padding: 0px !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .share-container {
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 4px;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 510px) {
+  .follow-fixed-player { right: 0px; }
+  .td-js-loaded .td-menu-background, .td-js-loaded #td-mobile-nav { visibility: visible; }
+  .td-main-content { border-right: none; }
+  .td-header-style-3 .td-header-sp-logo { margin: 25px 20px; }
+  /* fix menu social buttons */
+  .newtekadv-mobile-bottom { display: block; }
+  /* footer fix mobile bottom ad */
+  .td-sub-footer-container { padding-bottom: 50px; }
+  /* footer fix mobile bottom ad */
+  a.post-prev-thumb, a.post-next-thumb { float: none; margin-bottom: 0px; }
+  a.post-prev-thumb img, a.post-next-thumb img { margin: 0px; }
+  .td-main-content { border-right: none; }
+  .single .comments { margin-bottom: 0px; }
+  .video-home-row { padding: 0px !important; }
+  .video-home-row .td-container { padding: 0px !important; }
+  .video-home-row .td-pb-row { padding: 0px !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .share-container {
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 4px;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 511px) and (max-width: 767px) {
+  .follow-fixed-player { right: 0px; }
+  .td-js-loaded .td-menu-background, .td-js-loaded #td-mobile-nav { visibility: visible; }
+  /* fix menu social buttons */
+  .newtekadv-mobile-bottom { display: block; }
+  /* footer fix mobile bottom ad */
+  .td-sub-footer-container { padding-bottom: 50px; }
+  /* footer fix mobile bottom ad */
+  a.post-prev-thumb, a.post-next-thumb { float: none; margin-bottom: 0px; }
+  a.post-prev-thumb img, a.post-next-thumb img { margin: 0px; }
+  .td-main-content { border-right: none; }
+  .single .comments { margin-bottom: 0px; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .share-container {
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 4px;
+    z-index: 999;
+  }
+}
+
+@media screen and (width: 768px) {
+  .follow-fixed-player { right: 0px; }
+  .td-header-style-3 .td-header-sp-logo { margin: 25px 20px; }
+  /* fix menu social buttons */
+  .newtekadv-mobile-bottom { display: block; }
+  /* footer fix mobile bottom ad */
+  .td-sub-footer-container { padding-bottom: 50px; }
+  /* footer fix mobile bottom ad */
+  a.post-prev-thumb, a.post-next-thumb { float: none; margin-bottom: 0px; }
+  a.post-prev-thumb img, a.post-next-thumb img { margin: 0px; }
+  .td-container { width: 100%; }
+  .td-main-content { border-right: none; }
+  .td-pb-span8 { width: 60.9%; }
+  .td-pb-span4 { width: 39.1%; padding: 0px; }
+  .td-rec-hide-on-tp { display: block !important; }
+  .td-a-rec-id-custom_ad_2, .td-a-rec-id-custom_ad_3, .td-a-rec-id-custom_ad_4, .td-a-rec-id-custom_ad_5 { margin-left: -17px; }
+  .content-home { border: none; }
+  .single .comments { margin-bottom: 0px; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; height: auto !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  .rmp-playlist-item { height: 84px !important; }
+  .rmp-playlist-item-number { font-size: 20px !important; line-height: 84px !important; }
+  .rmp-playlist-item-poster-wrapper { text-align: center !important; }
+  .rmp-playlist-item-poster { width: 60% !important; }
+  .rmp-playlist-item-title { font-size: 18px !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .follow-fixed-player { right: 0px; }
+  .td-pb-span8 { width: 60.9%; }
+  .td-pb-span4 { width: 39.1%; padding: 0px; }
+  .td-rec-hide-on-tp { display: block !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; height: auto !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  .rmp-playlist-item { height: 84px !important; }
+  .rmp-playlist-item-number { font-size: 20px !important; line-height: 84px !important; }
+  .rmp-playlist-item-poster-wrapper { text-align: center !important; }
+  .rmp-playlist-item-poster { width: 60% !important; }
+  .rmp-playlist-item-title { font-size: 18px !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .follow-fixed-player { right: 0px; }
+  .td-pb-span8 { width: 60.9%; }
+  .td-pb-span4 { width: 39.1%; padding: 0px; }
+  .td-rec-hide-on-tp { display: block !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; height: auto !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  .rmp-playlist-item { height: 84px !important; }
+  .rmp-playlist-item-number { font-size: 20px !important; line-height: 84px !important; }
+  .rmp-playlist-item-poster-wrapper { width: 16% !important; text-align: center !important; }
+  .rmp-playlist-item-text-area { left: 34% !important; width: 62% !important; }
+  .rmp-playlist-item-title { font-size: 18px !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1365px) {
+  .follow-fixed-player { right: 0px; }
+  .td-rec-hide-on-tp { display: block !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 1068px !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 760px !important; }
+  .rmp-playlist-side-menu { height: 428px !important; }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1400px) {
+  .follow-fixed-player { right: 0px; }
+  .contenitore { width: 1042px; margin: 0 auto; }
+  .td-container { width: 1042px; padding: 0px 5px; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 1068px !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 726px !important; }
+  .rmp-playlist-side-menu { height: 408px !important; }
+}

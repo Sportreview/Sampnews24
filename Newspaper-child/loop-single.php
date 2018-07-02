@@ -104,19 +104,23 @@ if (have_posts()) {
             } ?>
 
 
-           <?php if (function_exists('adv_in_article')) {
+          <?php if (function_exists('adv_in_article')) {
               adv_in_article();
             } ?>
             
-                 <?php if (function_exists('correlati_adsense')) {
+            <?php if (function_exists('adv_top_mobile_single')) {
+              adv_top_mobile_single();
+            } ?>
+            
+             
+            <?php if (function_exists('correlati_adsense')) {
               correlati_adsense();
             } ?>
-         
 
+           
             <?php if (function_exists('correlati_4w')) {
                 correlati_4w();
             } ?>
-
 
 	        <?php echo $td_mod_single->get_item_scope_meta();?>
         </footer>
